@@ -1,0 +1,1 @@
+INSERT INTO song (title, artist) VALUES ('Thank The Watchmaker', 'And Then There Were None');
