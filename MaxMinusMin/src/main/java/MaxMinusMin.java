@@ -10,6 +10,19 @@ public class MaxMinusMin {
      * @return the max value of nums minus the min value of nums.
      */
     public int difference(List<Integer> nums){
-        return 0;
+        int max = -1;
+        int min = -1;
+        for (int i = 0; i < nums.size(); i++) {
+            if (i == 0) {
+                max = nums.get(i);
+                min = nums.get(i);
+            } else if (nums.get(i) > max) {
+                max = nums.get(i);
+            } else if (nums.get(i) < min) {
+                min = nums.get(i);
+            }
+        }
+        int difference = max - min;
+        return difference;
     }
 }
