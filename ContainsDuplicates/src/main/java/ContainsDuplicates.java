@@ -7,7 +7,14 @@ public class ContainsDuplicates {
      * @param nums an array of ints.
      * @return true if nums contains any duplicate values, false if it does not.
      */
-    public boolean containsDuplicate(int[] nums){
+    public boolean containsDuplicate(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            for (int j = 0; j < nums.length; j++) {
+                if (i != j && nums[i] == nums[j]) {
+                    return true;
+                }
+            }
+        }
         return false;
     }
 }
