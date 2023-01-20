@@ -123,6 +123,7 @@ public class LibraryAppTest {
         Book book = bookDAO.getBookByIsbn(100);
         Assert.assertEquals(b1, book);
     }
+    
     /**
      * Inserting a book should make that book visible when getting all books.
      */
