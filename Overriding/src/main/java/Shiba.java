@@ -18,5 +18,10 @@
 public class Shiba extends Dog{
 
 //    override sound() here
+    @Override
+    public String sound() {
+        // TODO Auto-generated method stub
+        return "Meow";
+    }
 
 }
