@@ -56,9 +56,27 @@ public class SampleClass {
     public boolean b;
 
     //    implement a custom .equals(SampleClass other){} method here.
+    @Override
+    public boolean equals(Object obj) {
+        // TODO Auto-generated method stub
+        boolean check = false;
+        if (obj instanceof SampleClass) {
+            SampleClass temp = (SampleClass) obj;
+            if (a == temp.a && b == temp.b) {
+                check = true;
+            }
+        }
+        return check;
+    }
 
 
     //    implement a custom .toString(){} method here.
+    @Override
+    public String toString() {
+        // TODO Auto-generated method stub
+        String json = ("{a:" + String.valueOf(a) + ", b:" + String.valueOf(b) + "}");
+        return json;
+    }
 
     
 }
